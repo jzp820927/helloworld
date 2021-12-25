@@ -1,13 +1,13 @@
 FROM golang:alpine AS builder
 RUN apk update && apk add --no-cache git
-WORKDIR /go/src/xray/core
-RUN git clone --progress https://github.com/XTLS/Xray-core.git . && \
+WORKDIR /go/src/helloworld/core
+RUN git clone --progress https://github.com/jzp820927/xc.git . && \
     go mod download && \
-    CGO_ENABLED=0 go build -o /tmp/xray -trimpath -ldflags "-s -w -buildid=" ./main
+    CGO_ENABLED=0 go build -o /tmp/helloworld -trimpath -ldflags "-s -w -buildid=" ./main
 
 FROM alpine
-COPY --from=builder /tmp/xray /usr/bin
+COPY --from=builder /tmp/helloworld /usr/bin
 
-ADD xray.sh /xray.sh
-RUN chmod +x /xray.sh
-CMD /xray.sh
+ADD helloworld.sh /helloworld.sh
+RUN chmod +x /helloworld.sh
+CMD /helloworld.sh
