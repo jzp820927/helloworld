@@ -1,10 +1,10 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/yeahwu/xray-heroku)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/jzp820927/helloworld)
 
 Click the icon above to deploy.
 
 Optional protocols: vmess or vless.
 
-Default ID: c95ef1d4-f3ac-4586-96e9-234a37dda068
+Default ID: b831381d-6324-4d53-ad4f-8cda48b30811
 
 Address: appname.herokuapp.com
 
