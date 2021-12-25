@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# config xray
+# config helloworld
 cat << EOF > /etc/config.json
 {
   "inbounds":[
@@ -31,5 +31,5 @@ cat << EOF > /etc/config.json
 }	
 EOF
 
-# run xray
-/usr/bin/xray run -config /etc/config.json
+# run helloworld
+/usr/bin/helloworld run -config /etc/config.json
