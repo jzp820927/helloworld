@@ -9,7 +9,7 @@
         },
         "PROTOCOL": {
             "description": "helloworld protocol, v or x",
-            "value": "vmess"
+            "value": "v"
         }
     },
     "website": "https://www.baidu.com",
